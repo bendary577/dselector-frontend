@@ -1,8 +1,30 @@
 {
     "home": {
+        "navbar" : {
+            "contact_us" : "contact us",
+            "ddns_services" : "ddns services",
+            "support" : "support",
+            "signup" : "Signup"
+        },
         "welcome" : {
-            "welcome_text" : "Get your dynamic ip address with a click !"
+            "welcome_text" : "Get your dynamic ip address with a click !",
+            "hostname" : "hostname",
+            "domain" : "domain",
+            "get_started" : "Get Started"
+        },
+        "about" : {
+            "local_network" : "local network",
+            "local_network_description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+        },
+        "presentation" : {
+            "presentation_text" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+        },
+        "services" : {
+            "camera" : "Get your dynamic ip address with a click !",
+            "pc" : "Get your dynamic ip address with a click !",
+            "router" : "Get your dynamic ip address with a click !"
         }
+
     }   
 }
   

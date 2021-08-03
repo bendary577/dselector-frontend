@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import egypt from "../assets/icons/navbar/egypt.png";
-import britain from "../assets/icons/navbar/britain.png";
+import egypt from "../../assets/icons/navbar/egypt.png";
+import britain from "../../assets/icons/navbar/britain.png";
 import { langIconStyle } from "../../styles/icons/iconStyle";
 
 const LanguageSwitcher = ()=> {
@@ -17,7 +17,7 @@ const LanguageSwitcher = ()=> {
     }
 
     return (
-        <div className="lang" >  
+        <div className="language_switcher_div mt-2" >  
             <a href="javascript:void(0);" onClick={()=>changeLanguage()}>
                 <img src={i18n.language === "ar" ? britain :  egypt } style={langIconStyle} className="" alt="language" />
             </a>

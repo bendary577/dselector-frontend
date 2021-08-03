@@ -1,19 +1,20 @@
 import React, {useContext} from 'react';
-import '../../assets/css/buttons/main_button.css';
 import { themeStyles } from '../../styles/theme/ThemeStyle';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
+import { useTranslation } from 'react-i18next';
 
-const MainButton = (props) => {
+const ScrollingRowSection = (props) => {
 
     const { mode } = useContext(ThemeContext);
     const styles = themeStyles(mode);
+    const { t } = useTranslation();
 
     return (
-        <div className="button_div my-2">
-            <button className="main_button" style={{width : props.width, height : props.height, ...styles.main_button}}>{props.title}</button>
+        <div className="scrolling_row_section_div" style={{height:'100px', backgroundColor:'#E5F7FF'}}>
+
         </div >
     );
 }
   
-export default MainButton;
+export default ScrollingRowSection;
   

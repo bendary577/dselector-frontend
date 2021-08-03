@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './i18n/config/i18nConfig';
+import ThemeProvider from '../src/context/theme/ThemeProvider';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ThemeProvider>
+    <React.StrictMode>
       <App />
-  </React.StrictMode>,
+    </React.StrictMode>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

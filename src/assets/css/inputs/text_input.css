@@ -1,6 +1,12 @@
 .text_input{
     padding: 10px;
-    border-radius: 25px;
+    border-width: 0px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 300px;
+}
+
+.text_input::placeholder{
+    padding-left: 15px;
+    color : '#A7A4A4'
 }

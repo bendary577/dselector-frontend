@@ -1,0 +1,9 @@
+.guest_register_hostname_div{
+    height:120px;
+}
+
+@media only screen and (max-width: 768px) {
+    .guest_register_hostname_div {
+      height: 200px;
+    }
+}

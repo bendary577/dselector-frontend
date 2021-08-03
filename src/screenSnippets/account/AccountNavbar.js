@@ -1,24 +1,25 @@
 import React, {useContext} from 'react';
-import dSelectorLogo from '../../assets/icons/navbar/dselector-logo.png';
+import dSelectorLogo from '../../assets/icons/navbar/logo.png';
 import LanguageSwitcher from '../../components/buttons/LanguageSwitcher';
-import MainButton from '../../components/buttons/MainButton';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
 import ThemeSwitcher from '../../components/buttons/ThemeSwitcher';
 import {themeStyles} from '../../styles/theme/ThemeStyle';
+import userIcon from '../../assets/icons/navbar/user.png';
+import '../../assets/css/account/account_navbar.css';
 
-const HomeNavbar = () => {
+const AccountNavbar = () => {
 
   const { t } = useTranslation();
   const { mode } = useContext(ThemeContext);
   const styles = themeStyles(mode); 
 
     return (
-      <div className="home_navbar_div">
+      <div className="account_navbar_div">
         <nav class="navbar navbar-expand-lg" style={styles.navbar}>
-          <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="">
-            <img src={dSelectorLogo} style={{width:'220px', height:'120px'}} className="" alt="dselector" />
-
+          <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="/">
+            <img src={dSelectorLogo} style={{width:'45px', height:'45px'}} className="" alt="dselector" />
+            <h4 className="mt-2">Dselector</h4>
           </a>  
           <div class="container-fluid">
             <button
@@ -52,7 +53,7 @@ const HomeNavbar = () => {
               </ul>
             </div>
             <div class="d-flex align-items-center">
-              <MainButton title={t(`home.navbar.signup`)} width="100px" height="40px"/>
+                <img src={userIcon} style={{width:'40px', height:'40px'}} alt="avatar" />
             </div>
           </div>
         </nav>
@@ -60,5 +61,5 @@ const HomeNavbar = () => {
     );
 }
   
-export default HomeNavbar;
+export default AccountNavbar;
   
