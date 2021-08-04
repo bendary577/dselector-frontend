@@ -23,8 +23,26 @@
             "camera" : "Get your dynamic ip address with a click !",
             "pc" : "Get your dynamic ip address with a click !",
             "router" : "Get your dynamic ip address with a click !"
+        },
+        "scrolling_row" : {
+            "data_consistency" : "data consistency",
+            "high_reliability" : "high reliability",
+            "privacy_security" : "privacy security",
+            "availability" : "24/7 availability"
+        },
+        "footer" : {
+            "cselection_corp" : "cselection corp.",
+            "address" : "Ismael kamel street, helwan",
+            "follow_us" : "follow us now !",
+            "facebook" : "facebook",
+            "twitter" : "twitter",
+            "instagram" : "instagram",
+            "our_products" : "our products",
+            "erpnext" : "erpnext",
+            "physiapps" : "physiapps",
+            "take_look" : "take a look !",
+            "blog" : "our blog"
         }
-
     }   
 }
   

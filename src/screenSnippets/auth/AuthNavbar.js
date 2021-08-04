@@ -1,29 +1,23 @@
 import React, {useContext} from 'react';
 import dSelectorLogo from '../../assets/icons/navbar/dselector-logo.png';
-import dSelectorLogoWhite from '../../assets/icons/navbar/dselector-logo-white.png';
 import LanguageSwitcher from '../../components/buttons/LanguageSwitcher';
-import MainButton from '../../components/buttons/MainButton';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
 import ThemeSwitcher from '../../components/buttons/ThemeSwitcher';
 import {themeStyles} from '../../styles/theme/ThemeStyle';
-import  { Redirect } from 'react-router-dom'
+import '../../assets/css/account/account_navbar.css';
+import dSelectorLogoWhite from '../../assets/icons/navbar/dselector-logo-white.png';
 
-const HomeNavbar = () => {
+const AuthNavbar = () => {
 
   const { t } = useTranslation();
   const { mode } = useContext(ThemeContext);
   const styles = themeStyles(mode); 
 
-  const navigateToSignup = () => {
-    console.log("$$$$$$$$$$$$ hamada")
-    return <Redirect to='/signup'  />
-  }
-
     return (
-      <div className="home_navbar_div">
-        <nav class="navbar navbar-expand-lg" style={styles.home.navbar}>
-          <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="">
+      <div className="account_navbar_div">
+        <nav class="navbar navbar-expand-lg" style={styles.navbar}>
+          <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="/">
             <img src={mode === "dark" ? dSelectorLogoWhite : dSelectorLogo } style={{width:'220px', height:'120px'}} className="" alt="dselector" />
           </a>  
           <div class="container-fluid">
@@ -40,25 +34,13 @@ const HomeNavbar = () => {
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" style={styles.home.navbar} href="">{t(`home.navbar.contact_us`)}</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style={styles.home.navbar} href="">{t(`home.navbar.ddns_services`)}</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style={styles.home.navbar} href="">{t(`home.navbar.support`)}</a>
-                </li>
-                <li class="nav-item">
-                  <LanguageSwitcher />
-                </li>
                 <li class="nav-item">
                   <ThemeSwitcher />
                 </li>
               </ul>
             </div>
-            <div class="d-flex align-items-center">
-              <MainButton title={t(`home.navbar.signup`)} width="100px" height="40px" method={navigateToSignup}/>
+            <div class="">
+                  <LanguageSwitcher />
             </div>
           </div>
         </nav>
@@ -66,5 +48,5 @@ const HomeNavbar = () => {
     );
 }
   
-export default HomeNavbar;
+export default AuthNavbar;
   

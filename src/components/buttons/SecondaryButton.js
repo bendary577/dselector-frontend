@@ -4,7 +4,7 @@ import { themeStyles } from '../../styles/theme/ThemeStyle';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
 import  { Redirect } from 'react-router-dom';
 
-const MainButton = (props) => {
+const SecondaryButton = (props) => {
 
     const { mode } = useContext(ThemeContext);
     const styles = themeStyles(mode);
@@ -16,10 +16,10 @@ const MainButton = (props) => {
     
     return (
         <div className="button_div my-2">
-            <button className="main_button" onClick={()=> navigateToSignup } style={{width : props.width, height : props.height, ...styles.buttons.main_button}}>{props.title}</button>
+            <button className="main_button" onClick={()=> navigateToSignup } style={{width : props.width, height : props.height, ...styles.buttons.secondary_button}}>{props.title}</button>
         </div >
     );
 }
   
-export default MainButton;
+export default SecondaryButton;
   

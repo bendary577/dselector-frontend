@@ -14,11 +14,11 @@ const AboutSection = (props) => {
     const { t } = useTranslation();
 
     return (
-        <div className="about_section_div">
+        <div className="about_section_div" style={styles.home.about.section}>
                 <div className="container">
                     <div className="row about">
                         <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <div class="card" style={{height:'300px', width:'380px'}}>
+                            <div class="card" style={styles.home.about.card}>
                                 <div class="card-body text-center">
                                     <img src={device1Icon} style={{width:'100px', height:'100px'}} alt="" />
                                     <h3 className="card-title mt-2"><strong>{t(`home.about.local_network`)}</strong></h3>
@@ -27,7 +27,7 @@ const AboutSection = (props) => {
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <div class="card" style={{height:'300px', width:'380px'}}>
+                            <div class="card" style={styles.home.about.card}>
                                 <div class="card-body text-center">
                                     <img src={device2Icon} style={{width:'100px', height:'100px'}} alt="" />
                                     <h3 className="card-title mt-2"><strong>{t(`home.about.local_network`)}</strong></h3>

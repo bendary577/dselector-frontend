@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeContext } from './context/theme/ThemeProvider';
 import { themeStyles } from "./styles/theme/ThemeStyle";
 import AccountDashboard from "./screens/account/AccountDashboard";
+import SignUp from "./screens/auth/SignUp";
+import SignIn from "./screens/auth/SignIn";
 
 const App = () => {
 
@@ -22,6 +24,15 @@ const App = () => {
               <Route exact path="/account">
                   <AccountDashboard />
               </Route>
+
+              <Route exact path="/signup">
+                  <SignUp />
+              </Route>
+
+              <Route exact path="/signin">
+                  <SignIn />
+              </Route>
+
           </Switch>
       </BrowserRouter>
       </div>
