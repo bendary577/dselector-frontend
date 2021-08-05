@@ -7,6 +7,9 @@ import { themeStyles } from "./styles/theme/ThemeStyle";
 import AccountDashboard from "./screens/account/AccountDashboard";
 import SignUp from "./screens/auth/SignUp";
 import SignIn from "./screens/auth/SignIn";
+import ForgotPassword from "./screens/auth/ForgotPassword";
+import ConfirmResetPasswordCode from "./screens/auth/ConfirmResetPasswordCode";
+import ResetPassword from "./screens/auth/ResetPassword";
 
 const App = () => {
 
@@ -29,8 +32,20 @@ const App = () => {
                   <SignUp />
               </Route>
 
-              <Route exact path="/signin">
+              <Route exact path="/login">
                   <SignIn />
+              </Route>
+
+              <Route exact path="/forgot_password">
+                  <ForgotPassword />
+              </Route>
+
+              <Route exact path="/confirm_code">
+                  <ConfirmResetPasswordCode />
+              </Route>
+
+              <Route exact path="/reset_password">
+                  <ResetPassword />
               </Route>
 
           </Switch>

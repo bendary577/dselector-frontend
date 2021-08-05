@@ -14,7 +14,7 @@ const RegisteredHostsCard = () => {
   const styles = themeStyles(mode); 
 
     return (
-      <div className="registered_hosts_card_div">
+      <div className="registered_hosts_card_div mb-3">
           <div className="card">
               <div className="card-body">
                   <div className="container">

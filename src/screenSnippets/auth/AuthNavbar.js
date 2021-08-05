@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
 import ThemeSwitcher from '../../components/buttons/ThemeSwitcher';
 import {themeStyles} from '../../styles/theme/ThemeStyle';
-import '../../assets/css/account/account_navbar.css';
+import '../../assets/css/account/navbar.css';
 import dSelectorLogoWhite from '../../assets/icons/navbar/dselector-logo-white.png';
 
 const AuthNavbar = () => {
@@ -15,7 +15,7 @@ const AuthNavbar = () => {
   const styles = themeStyles(mode); 
 
     return (
-      <div className="account_navbar_div">
+      <div className="account_navbar_div navbar_div">
         <nav class="navbar navbar-expand-lg" style={styles.navbar}>
           <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="/">
             <img src={mode === "dark" ? dSelectorLogoWhite : dSelectorLogo } style={{width:'220px', height:'120px'}} className="" alt="dselector" />

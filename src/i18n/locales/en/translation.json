@@ -4,7 +4,7 @@
             "contact_us" : "contact us",
             "ddns_services" : "ddns services",
             "support" : "support",
-            "signup" : "Signup"
+            "login" : "Login"
         },
         "welcome" : {
             "welcome_text" : "Get your dynamic ip address with a click !",
@@ -43,6 +43,12 @@
             "take_look" : "take a look !",
             "blog" : "our blog"
         }
-    }   
+    },
+    "auth" : {
+        "signup" : {
+            "signup" : "Signup"
+        }
+    }
+     
 }
   

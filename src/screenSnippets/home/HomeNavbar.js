@@ -7,21 +7,22 @@ import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
 import ThemeSwitcher from '../../components/buttons/ThemeSwitcher';
 import {themeStyles} from '../../styles/theme/ThemeStyle';
-import  { Redirect } from 'react-router-dom'
+import '../../assets/css/account/navbar.css';
+import { useHistory } from "react-router-dom";
 
 const HomeNavbar = () => {
 
   const { t } = useTranslation();
   const { mode } = useContext(ThemeContext);
   const styles = themeStyles(mode); 
+  const history = useHistory();
 
-  const navigateToSignup = () => {
-    console.log("$$$$$$$$$$$$ hamada")
-    return <Redirect to='/signup'  />
+  const navigateToLogin = () => {
+    history.push("/login") 
   }
 
     return (
-      <div className="home_navbar_div">
+      <div className="home_navbar_div navbar_div">
         <nav class="navbar navbar-expand-lg" style={styles.home.navbar}>
           <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="">
             <img src={mode === "dark" ? dSelectorLogoWhite : dSelectorLogo } style={{width:'220px', height:'120px'}} className="" alt="dselector" />
@@ -58,7 +59,7 @@ const HomeNavbar = () => {
               </ul>
             </div>
             <div class="d-flex align-items-center">
-              <MainButton title={t(`home.navbar.signup`)} width="100px" height="40px" method={navigateToSignup}/>
+              <MainButton title={t(`home.navbar.login`)} width="150px" height="40px" method={navigateToLogin}/>
             </div>
           </div>
         </nav>

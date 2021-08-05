@@ -14,11 +14,11 @@ const Services = (props) => {
     const { t } = useTranslation();
 
     return (
-        <div className="services_section_div" style={{height:'600px'}}>
+        <div className="services_section_div my-5">
             <div className="container">
                 <div className="row">
                     <dv className="col-md-6 col-sm-12 p-5 d-flex justify-content-center align-items-center">
-                        <img src={camera} style={{width:'150px', height:'150px'}} alt="camera" />
+                        <img src={camera} style={{width:'100px', height:'100px'}} alt="camera" />
                     </dv>
                     <dv className="col-md-6 col-sm-12 p5 d-flex justify-content-center align-items-center">
                         <h3>{t(`home.services.camera`)}</h3>
@@ -29,12 +29,12 @@ const Services = (props) => {
                         <h3>{t(`home.services.pc`)}</h3>
                     </dv>
                     <dv className="col-md-6 col-sm-12 p5 d-flex justify-content-center align-items-center">
-                        <img src={pc} style={{width:'150px', height:'150px'}} alt="pc" />    
+                        <img src={pc} style={{width:'100px', height:'100px'}} alt="pc" />    
                     </dv>
                 </div>
                 <div className="row">
                     <dv className="col-md-6 col-sm-12 p5 d-flex justify-content-center align-items-center">
-                        <img src={router} style={{width:'150px', height:'150px'}} alt="router" />
+                        <img src={router} style={{width:'100px', height:'100px'}} alt="router" />
                     </dv>
                     <dv className="col-md-6 col-sm-12 p5 d-flex justify-content-center align-items-center">
                         <h3>{t(`home.services.router`)}</h3>    

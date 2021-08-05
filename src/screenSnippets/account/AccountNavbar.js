@@ -6,7 +6,7 @@ import { ThemeContext } from '../../context/theme/ThemeProvider';
 import ThemeSwitcher from '../../components/buttons/ThemeSwitcher';
 import {themeStyles} from '../../styles/theme/ThemeStyle';
 import userIcon from '../../assets/icons/navbar/user.png';
-import '../../assets/css/account/account_navbar.css';
+import '../../assets/css/account/navbar.css';
 
 const AccountNavbar = () => {
 
@@ -15,7 +15,7 @@ const AccountNavbar = () => {
   const styles = themeStyles(mode); 
 
     return (
-      <div className="account_navbar_div">
+      <div className="account_navbar_div navbar_div">
         <nav class="navbar navbar-expand-lg" style={styles.navbar}>
           <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="/">
             <img src={dSelectorLogo} style={{width:'45px', height:'45px'}} className="" alt="dselector" />

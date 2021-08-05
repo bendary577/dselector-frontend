@@ -8,18 +8,23 @@ import SubscriptionPlan from '../../components/cards/SubscriptionPlan';
 import MainButton from '../../components/buttons/MainButton';
 import AuthNavbar from '../../screenSnippets/auth/AuthNavbar';
 import SecondaryButton from '../../components/buttons/SecondaryButton';
+import { useHistory } from "react-router-dom";
 
 const SignUp = () => {
 
   const { mode } = useContext(ThemeContext);
   const styles = themeStyles(mode);
   const { t } = useTranslation();
+  const history = useHistory();
+
+  const navigateToLogin = () => {
+    history.replace("/login") 
+  }
 
     return (
         <div>
-                    <AuthNavbar />
-      <div className="signup_div" style={styles.auth.signup}>
-
+        <AuthNavbar />
+        <div className="signup_div" style={styles.auth.signup}>
           <div className="h-100">
 
               <div className="card h-100">
@@ -61,7 +66,7 @@ const SignUp = () => {
                             </div>
 
                             <div class="me-5 mb-4">
-                                <SecondaryButton title={t(`home.navbar.signup`)} width="100%" height="40px" method={()=>{}}/>
+                                <SecondaryButton title={t(`home.navbar.signup`)} method={navigateToLogin} width="100%" height="40px" method={()=>{}}/>
                             </div>
 
                         </form>

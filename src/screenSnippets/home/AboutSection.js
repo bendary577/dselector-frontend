@@ -17,6 +17,9 @@ const AboutSection = (props) => {
         <div className="about_section_div" style={styles.home.about.section}>
                 <div className="container">
                     <div className="row about">
+                        <div className="mt-5 text-center">
+                            <h2>Lorem Ibsun Telar Vage</h2>
+                        </div>
                         <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
                             <div class="card" style={styles.home.about.card}>
                                 <div class="card-body text-center">

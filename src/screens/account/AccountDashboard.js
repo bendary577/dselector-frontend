@@ -5,8 +5,8 @@ import {themeStyles} from '../../styles/theme/ThemeStyle';
 import AccountNavbar from '../../screenSnippets/account/AccountNavbar';
 import MinorFooter from '../../screenSnippets/account/MinorFooter';
 import AccountSideMenu from '../../screenSnippets/account/AccountSideMenu';
-import AccountTopNavbar from '../../screenSnippets/account/AccountTopNavbar';
-import RegisteredHostsCard from '../../components/cards/RegisteredHostsCard';
+import AccountDashboardContent from '../../screenSnippets/account/AccountDashboardContent';
+import CreateNewHost from '../../screenSnippets/account/CreateNewHost';
 
 const AccountDashboard = () => {
 
@@ -19,8 +19,10 @@ const AccountDashboard = () => {
           <AccountNavbar />
           <div className="d-flex">
               <AccountSideMenu />
-              <AccountTopNavbar />
-              <RegisteredHostsCard />
+              <div className="dashboard_content w-100">
+                  {/* <AccountDashboardContent /> */}
+                  <CreateNewHost />
+              </div>
           </div>
           <MinorFooter />
       </div>
