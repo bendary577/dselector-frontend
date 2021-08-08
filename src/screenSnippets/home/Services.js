@@ -14,7 +14,7 @@ const Services = (props) => {
     const { t } = useTranslation();
 
     return (
-        <div className="services_section_div my-5">
+        <div className="services_section_div my-5" style={styles.home.services}>
             <div className="container">
                 <div className="row">
                     <dv className="col-md-6 col-sm-12 p-5 d-flex justify-content-center align-items-center">

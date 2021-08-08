@@ -15,7 +15,7 @@ const WelcomeSection = () => {
     const { t } = useTranslation();
 
     return (
-            <div className="welcome_section">
+            <div className="welcome_section" style={styles.home.welcome}>
                 <div className="container">
                     <div className="row welcome">
                         {/* ----------------------------------------- left section -------------------------- */}
@@ -31,6 +31,7 @@ const WelcomeSection = () => {
                                         </div>
                                         <div className="welcome_text">
                                             <h1><strong>{t(`home.welcome.welcome_text`)}</strong></h1>
+                                            <h1 style={{color : '#BB86FC'}}><strong>Visit our hosting store now</strong></h1>
                                         </div>
                                     </div>
                                 </div>
@@ -38,7 +39,7 @@ const WelcomeSection = () => {
                         </div>
                         {/* ---------------------------------------- right section---------------------------- */}
                         <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <img src={welcomeImg} style={{width:'550px', height:'550px'}} alt="welcome" className="" />
+                            <img src={welcomeImg} style={{width:'550px', height:'550px', ...styles.home.welcome.image}} alt="welcome" className="" />
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,7 @@ import SignIn from "./screens/auth/SignIn";
 import ForgotPassword from "./screens/auth/ForgotPassword";
 import ConfirmResetPasswordCode from "./screens/auth/ConfirmResetPasswordCode";
 import ResetPassword from "./screens/auth/ResetPassword";
+import CreateNewHost from "./screens/account/CreateNewHost";
 
 const App = () => {
 
@@ -26,6 +27,10 @@ const App = () => {
 
               <Route exact path="/account">
                   <AccountDashboard />
+              </Route>
+
+              <Route exact path="/create_new_host">
+                  <CreateNewHost />
               </Route>
 
               <Route exact path="/signup">

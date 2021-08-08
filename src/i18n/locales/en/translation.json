@@ -13,6 +13,8 @@
             "get_started" : "Get Started"
         },
         "about" : {
+            "title" : "Lorem Ibsun Telar Vage",
+            "description" : "lorem ibpusm asdn mkka asdn sdk wel ansdam sdksd asdn",
             "local_network" : "local network",
             "local_network_description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
         },
@@ -45,8 +47,65 @@
         }
     },
     "auth" : {
+        "forms" : {
+            "email" : "email",
+            "password" : "password",
+            "confirm_password" : "confirm password",
+            "phone" : "phone number"
+        },
         "signup" : {
-            "signup" : "Signup"
+            "signup_title" : "register a new account at dselector",
+            "confirm_privacy" : "by clicking sinup you confirm to our privacy policy and terms of services",
+            "signup" : "signup",
+            "already_have_account" : "already have an account ?",
+            "login" : "login",
+            "subscription_plan" : {
+                "free" : "free plan",
+                "premium" : "premium plan",
+                "hosnames" : "host names",
+                "domains" : "domains",
+                "no_ads" : "no ads",
+                "support" : "support",
+                "account_confirmation" : "30 days account confirmation"
+            }
+        },
+        "login" : {
+            "login_title" : "login to your dselector account",
+            "login" : "login",
+            "have_account" : "don't have an account",
+            "signup" : "signup"
+        }
+    },
+    "dashboard" : {
+        "sidebar" : {
+            "dashboard" : "dashboard",
+            "account" : "account",
+            "support" : "support",
+            "services" : "services"
+        },
+        "top_navbar" : {
+            "toggle" : "toggle dashboard"
+        },
+        "content" : {
+            "hostnames_available" : "1 hostname from 3",
+            "create_new" : "create new one",
+            "search" : "search",
+            "hosting_services_table" : {
+                "hostname" : "hostname",
+                "ip" : "ip/target",
+                "last_update" : "last update",
+                "ping" : "ping",
+                "type" : "type"
+            }
+        },
+        "create_new_host" : {
+            "create_host" : "create new host",
+            "hostname" : "hostname",
+            "domain" : "domain",
+            "type" : "type",
+            "dns" : "dns host",
+            "ipv6" : "ipv6",
+            "request" : "request service"
         }
     }
      

@@ -14,25 +14,25 @@ const SubscriptionPlan = () => {
                         <tr>
                             <th scope="col"></th>
                             <th scope="col"></th>
-                            <th scope="col">free plan</th>
-                            <th scope="col">premium plan</th>
+                            <th scope="col">{t(`auth.signup.subscription_plan.free`)}</th>
+                            <th scope="col">{t(`auth.signup.subscription_plan.premium`)}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">hostnames</th>
+                            <th scope="row">{t(`auth.signup.subscription_plan.hosnames`)}</th>
                             <td></td>
                             <td>1</td>
                             <td>+80</td>
                         </tr>
                         <tr>
-                            <th scope="row">domains</th>
+                            <th scope="row">{t(`auth.signup.subscription_plan.domains`)}</th>
                             <td></td>
                             <td>3</td>
                             <td>10</td>
                         </tr>
                         <tr>
-                            <th scope="row">no ads</th>
+                            <th scope="row">{t(`auth.signup.subscription_plan.no_ads`)}</th>
                             <td></td>
                             <td>
                                 <img src={falseIcon} style={{width : '25px', height : '25px'}} alt="" />
@@ -42,7 +42,7 @@ const SubscriptionPlan = () => {
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">support</th>
+                            <th scope="row">{t(`auth.signup.subscription_plan.support`)}</th>
                             <td></td>
                             <td>
                                 <img src={falseIcon} style={{width : '25px', height : '25px'}} alt="" />
@@ -52,7 +52,7 @@ const SubscriptionPlan = () => {
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">30 days account confirmation</th>
+                            <th scope="row">{t(`auth.signup.subscription_plan.account_confirmation`)}</th>
                             <td></td>
                             <td>
                                 <img src={trueIcon} style={{width : '25px', height : '25px'}} alt="" />

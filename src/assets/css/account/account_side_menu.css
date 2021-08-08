@@ -24,7 +24,7 @@ a, a:hover, a:focus {
     min-width: 250px;
     max-width: 250px;
     min-height: 100vh;
-    background: #70CBFF;
+    /*background: #70CBFF;*/
     color: #fff;
     transition: all 0.3s;
 }
@@ -35,7 +35,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #70CBFF;
+    /* background: #70CBFF; */
 }
 
 #sidebar ul.components {
@@ -58,15 +58,11 @@ a, a:hover, a:focus {
     background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #70CBFF;
-}
 
 ul ul a {
-    font-size: 0.9em !important;
+    font-size: 1.2em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    /* background: #6d7fcc; */
 }
 
 a[data-toggle="collapse"] {

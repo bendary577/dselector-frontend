@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
-import dSelectorLogo from '../../assets/icons/navbar/logo.png';
+import dSelectorLogo from '../../assets/icons/navbar/dselector-logo.png';
+import dSelectorLogoWhite from '../../assets/icons/navbar/dselector-logo-white.png';
 import LanguageSwitcher from '../../components/buttons/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
@@ -16,11 +17,10 @@ const AccountNavbar = () => {
 
     return (
       <div className="account_navbar_div navbar_div">
-        <nav class="navbar navbar-expand-lg" style={styles.navbar}>
-          <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="/">
-            <img src={dSelectorLogo} style={{width:'45px', height:'45px'}} className="" alt="dselector" />
-            <h4 className="mt-2">Dselector</h4>
-          </a>  
+        <nav class="navbar navbar-expand-lg" style={styles.home.navbar}>
+          <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="">
+            <img src={mode === "dark" ? dSelectorLogoWhite : dSelectorLogo } style={{width:'220px', height:'120px'}} className="" alt="dselector" />
+          </a>   
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -36,13 +36,13 @@ const AccountNavbar = () => {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-link" href="">{t(`home.navbar.contact_us`)}</a>
+                  <a class="nav-link" style={styles.home.navbar} href="">{t(`home.navbar.contact_us`)}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">{t(`home.navbar.ddns_services`)}</a>
+                  <a class="nav-link" style={styles.home.navbar} href="">{t(`home.navbar.ddns_services`)}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">{t(`home.navbar.support`)}</a>
+                  <a class="nav-link" style={styles.home.navbar} href="">{t(`home.navbar.support`)}</a>
                 </li>
                 <li class="nav-item">
                   <LanguageSwitcher />

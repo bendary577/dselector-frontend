@@ -14,9 +14,9 @@ const RegisteredHostsCard = () => {
   const styles = themeStyles(mode); 
 
     return (
-      <div className="registered_hosts_card_div mb-3">
+      <div className="registered_hosts_card_div mb-3" >
           <div className="card">
-              <div className="card-body">
+              <div className="card-body" style={styles.cards.registered_hosts}> 
                   <div className="container">
                       <div className="row">
                           <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
@@ -25,10 +25,10 @@ const RegisteredHostsCard = () => {
                           <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                                 <div className="container">
                                     <div className="row">
-                                        <h4>1 hostname from 3</h4>
+                                        <h4>{t(`dashboard.content.hostnames_available`)}</h4>
                                     </div>
                                     <div className="row">
-                                        <MainButton title="create new one" width="120px" height="50px" />
+                                        <MainButton title={t(`dashboard.content.create_new`)}width="120px" height="50px" />
                                     </div>
                                 </div>
                           </div>

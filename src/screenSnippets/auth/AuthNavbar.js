@@ -16,7 +16,7 @@ const AuthNavbar = () => {
 
     return (
       <div className="account_navbar_div navbar_div">
-        <nav class="navbar navbar-expand-lg" style={styles.navbar}>
+        <nav class="navbar navbar-expand-lg" style={styles.home.navbar}>
           <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="/">
             <img src={mode === "dark" ? dSelectorLogoWhite : dSelectorLogo } style={{width:'220px', height:'120px'}} className="" alt="dselector" />
           </a>  

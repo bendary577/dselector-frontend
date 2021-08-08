@@ -13,8 +13,8 @@ const WelcomeCard = () => {
 
     return (
       <div className="welcome_card_div mb-3">
-          <div className="card">
-              <div className="card-body">
+          <div className="card border border-info" style={styles.home.welcome.card}>
+              <div className="card-body" >
                   <div className="container">
                       <div className="row">
                             <div className="col-md-6 col-sm-6 d-flex justify-content-center align-items-center">

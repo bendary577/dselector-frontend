@@ -6,10 +6,20 @@ export const theme = {
         backgroundColor: "#ffffff",
         highlight: "#fdb813"
       },
+    //----------------------------------------- home ------------------- 
       home : {
         navbar : {
           backgroundColor : 'white',
           color : 'black',
+        },
+        welcome : {
+          backgroundColor : 'white',
+          color : 'black',
+          image : {},
+          card : {
+            backgroundColor : 'white',
+            color: "black",
+          }
         },
         about : {
           section : {
@@ -23,8 +33,16 @@ export const theme = {
             height : '300px'
           }
         },
+        presentation : {
+          backgroundColor : 'white',
+          color : 'black'
+        },
         scrolling_row : {
           backgroundColor : '#E5F7FF',
+          color : 'black'
+        },
+        services : {
+          backgroundColor : 'white',
           color : 'black'
         },
         footer : {
@@ -32,6 +50,21 @@ export const theme = {
           color : 'white'
         }
 
+      },
+      //----------------------------------------- dashboard -------------------
+      dashboard : {
+        sidebar : {
+          backgroundColor : "#70CBFF",
+          color : "white",
+        },
+        create_new_host : {
+          backgroundColor : 'white',
+          color : "black",
+          card : {
+            backgroundColor : 'white',
+            color : 'black'
+          },
+        }
       },
       buttons : {
         main_button : {
@@ -48,7 +81,20 @@ export const theme = {
           backgroundColor : 'white'
         },
       },
- 
+      cards : {
+        registered_hosts : {
+          backgroundColor : 'white',
+          color : 'black'
+        },
+        auth_cards : {
+          backgroundColor : 'white',
+          color : 'black'
+        }
+       },
+       tables : {
+        backgroundColor : 'white',
+        color : 'black',
+      }
     },
 
     //-------------------------------------- dark theme styling --------------------------------
@@ -63,23 +109,56 @@ export const theme = {
           backgroundColor : "#2b2c2e",
           color : "white"
         },
-        about : {
-          section : {
-            backgroundColor : '#2b2c2e',
-            color: "#42e0ff",
+        welcome : {
+          backgroundColor : '#121212',
+          color : 'white',
+          image : {
+            boxShadow : `0px 0px 200px 300px #0ff`,
           },
           card : {
-            backgroundColor : 'black',
+            backgroundColor : '#121212',
             color: "white",
           }
         },
+        about : {
+          section : {
+            backgroundColor : 'black',
+            color: "white",
+          },
+          card : {
+            backgroundColor : '#121212',
+            color: "white",
+          }
+        },
+        presentation : {
+          backgroundColor : '#121212',
+          color : 'white'
+        },
         scrolling_row : {
-          backgroundColor : '#a2a4a6',
+          backgroundColor : '#BB86FC',
           color : 'black'
+        },
+        services : {
+          backgroundColor : '#121212',
+          color : 'white'
         },
         footer : {
           backgroundColor : '#2b2c2e',
           color : 'white'
+        }
+      },
+      dashboard : {
+        sidebar : {
+          backgroundColor : "#39403e",
+          color : "white",
+        },
+        create_new_host : {
+          backgroundColor : '',
+          color : "white",
+          card : {
+            backgroundColor : '#212121',
+            color : 'white'
+          },
         }
       },
       buttons : {
@@ -88,15 +167,29 @@ export const theme = {
           color : 'white'
         },
         secondary_button : {
-          backgroundColor : '##449fc9',
+          backgroundColor : '#03DAC5',
           color : 'white'
         }
       },
       inputs : {
         text_input : {
-          backgroundColor : '#a2a4a6'
+          backgroundColor : 'black'
         }
       },
+      cards : {
+        registered_hosts : {
+            backgroundColor : '#39403e',
+            color : 'white',
+        },
+        auth_cards : {
+          backgroundColor : '#2b2c2e',
+          color : 'white'
+        }
+      },
+      tables : {
+        backgroundColor : '#39403e',
+        color : 'white',
+      }
     }
   };
   

@@ -5,6 +5,7 @@ import { ThemeContext } from '../../context/theme/ThemeProvider';
 import TextInput from '../../components/inputs/TextInput';
 import MainButton from '../../components/buttons/MainButton';
 import AuthNavbar from '../../screenSnippets/auth/AuthNavbar';
+import MinorFooter from '../../screenSnippets/account/MinorFooter';
 
 
 const ForgotPassword = () => {
@@ -17,10 +18,7 @@ const ForgotPassword = () => {
     <div>
     <AuthNavbar />
       <div className="fotgot_password_div" style={styles.auth.auth_screens}>
-
-          <div className="h-100">
-
-              <div className="card h-100">
+              <div className="card" style={styles.auth.auth_cards}>
                   <div className="card-title">
                       <h2 className="m-3"><strong>forgot your password ?</strong></h2>
                   </div>
@@ -37,7 +35,7 @@ const ForgotPassword = () => {
                   </div>
               </div>
           </div>
-        </div>
+        <MinorFooter />
       </div>
     );
 }

@@ -26,9 +26,9 @@ const AccountTopNavbar = () => {
           <div id="content"> 
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <button type="button" id="sidebarCollapse" className="btn btn-info" onClick={toggleSideMenu}> 
+                    <button type="button" id="sidebarCollapse" className="btn"  style={{backgroundColor : '#03DAC5'}} onClick={toggleSideMenu}> 
                         <img src={dashboardIcon} style={{width:'20px', height:'20px'}} alt="" />
-                        <span className="me-2">Toggle Sidebar</span>
+                        <span className="me-2">{t(`dashboard.top_navbar.toggle`)}</span>
                     </button>
                 </div>
             </nav>

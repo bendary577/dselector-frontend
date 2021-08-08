@@ -13,6 +13,8 @@
             "get_started" : "ابدأ الاَن"
         },
         "about" : {
+            "title" : "عن خدماتنا المقدمة",
+            "description" : "كان لوريم إيبسوم ولايزال المعيار للنص حيث يشكل نصا للاختبار فقط",
             "local_network" : "الشبكات المحلية",
             "local_network_description" : "هذا نص للتجربة فقط تستخدم نصوص التجربة لأجل عرض شكل النص بعد التعديل وأثناء العمل "
         },
@@ -43,7 +45,69 @@
             "take_look" : "ألق نظرة !",
             "blog" : "مدونتنا"
         }
+    },
+    "auth" : {
+        "forms" : {
+            "email" : "البريد الإلكتروني",
+            "password" : "كلمة السر",
+            "confirm_password" : "تأكيد كلمة السر",
+            "phone" : "رقم الهاتف"
+        },
+        "signup" : {
+            "signup_title" : " سجل حساب جديد ",
+            "confirm_privacy" : "عند ضغطك علي زر التسجيل يجب ان توافق علي سياسة خصوصية الموقع",
+            "signup" : "سجل حساب جديد",
+            "already_have_account" : "هل تملك حسابا بالفعل ؟",
+            "login" : "سجل الدخول",
+            "subscription_plan" : {
+                "free" : "الخطة المجانية",
+                "premium" : "الخطة المدفوعة",
+                "hosnames" : "الاستضافة",
+                "domains" : "النطاق",
+                "no_ads" : "لا إعلانات",
+                "support" : "الدعم",
+                "account_confirmation" : "تأكيد الحساب كل 30 يوم"
+            }
+        },
+        "login" : {
+            "login_title" : "سجل الدخول لحسابك",
 
-    }   
+            "login" : "سجل الدخول",
+            "have_account" : "لا تمتلك حساب ؟",
+            "signup" : "سجل حساب جديد"
+        }
+    },
+    "dashboard" : {
+        "sidebar" : {
+            "dashboard" : "لوحة التحكم",
+            "account" : "الحساب",
+            "support" : "الدعم الفني",
+            "services" : "الخدمات"
+        },
+        "top_navbar" : {
+            "toggle" : "بدل لوحة التحكم"
+        },
+        "content" : {
+            "hostnames_available" : "استضافة واحدة من 3",
+            "create_new" : "أنشيء استضافة جديدة",
+            "search" : "بحث",
+            "hosting_services_table" : {
+                "hostname" : "اسم الاستضافة",
+                "ip" : "ip/target",
+                "last_update" : "اخر تحديث",
+                "ping" : "ping",
+                "type" : "النوع"
+            }
+        },
+        "create_new_host" : {
+            "create_host" : "أنشيء استضافة جديدة",
+            "hostname" : "اسم الاستضافة",
+            "domain" : "النطاق",
+            "type" : "النوع",
+            "dns" : "dns host",
+            "ipv6" : "ipv6",
+            "request" : "طلب الخدمة"
+        }
+    }  
 }
   
