@@ -1,8 +1,8 @@
 import React,{useContext} from 'react';
 import { useTranslation } from 'react-i18next';
-import MainButton from '../../components/buttons/MainButton';
-import { ThemeContext } from '../../context/theme/ThemeProvider';
-import {themeStyles} from '../../styles/theme/ThemeStyle';
+import MainButton from '../../../components/buttons/MainButton';
+import { ThemeContext } from '../../../context/theme/ThemeProvider';
+import {themeStyles} from '../../../styles/theme/ThemeStyle';
 
 const HostingServicesTable = () => {
 

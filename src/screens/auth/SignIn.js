@@ -6,7 +6,7 @@ import TextInput from '../../components/inputs/TextInput';
 import MainButton from '../../components/buttons/MainButton';
 import AuthNavbar from '../../screenSnippets/auth/AuthNavbar';
 import SecondaryButton from '../../components/buttons/SecondaryButton';
-import MinorFooter from '../../screenSnippets/account/MinorFooter';
+import MinorFooter from '../../screenSnippets/account/account/MinorFooter';
 
 const SignIn = () => {
 

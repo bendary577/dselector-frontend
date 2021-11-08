@@ -9,7 +9,7 @@ import MainButton from '../../components/buttons/MainButton';
 import AuthNavbar from '../../screenSnippets/auth/AuthNavbar';
 import SecondaryButton from '../../components/buttons/SecondaryButton';
 import { useHistory } from "react-router-dom";
-import MinorFooter from '../../screenSnippets/account/MinorFooter';
+import MinorFooter from '../../screenSnippets/account/account/MinorFooter';
 
 const SignUp = () => {
 

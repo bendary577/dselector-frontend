@@ -1,13 +1,13 @@
 import React, {useContext} from 'react';
-import dSelectorLogo from '../../assets/icons/navbar/dselector-logo.png';
-import dSelectorLogoWhite from '../../assets/icons/navbar/dselector-logo-white.png';
-import LanguageSwitcher from '../../components/buttons/LanguageSwitcher';
+import dSelectorLogo from '../../../assets/icons/navbar/dselector-logo.png';
+import dSelectorLogoWhite from '../../../assets/icons/navbar/dselector-logo-white.png';
+import LanguageSwitcher from '../../../components/buttons/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
-import { ThemeContext } from '../../context/theme/ThemeProvider';
-import ThemeSwitcher from '../../components/buttons/ThemeSwitcher';
-import {themeStyles} from '../../styles/theme/ThemeStyle';
-import userIcon from '../../assets/icons/navbar/user.png';
-import '../../assets/css/account/navbar.css';
+import { ThemeContext } from '../../../context/theme/ThemeProvider';
+import ThemeSwitcher from '../../../components/buttons/ThemeSwitcher';
+import {themeStyles} from '../../../styles/theme/ThemeStyle';
+import userIcon from '../../../assets/icons/navbar/user.png';
+import '../../../assets/css/account/navbar.css';
 
 const AccountNavbar = () => {
 

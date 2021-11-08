@@ -1,14 +1,14 @@
 import React, {useContext} from 'react';
 import { useTranslation } from 'react-i18next';
-import { ThemeContext } from '../../context/theme/ThemeProvider';
-import {themeStyles} from '../../styles/theme/ThemeStyle';
-import AccountTopNavbar from '../../screenSnippets/account/AccountTopNavbar';
-import TextInput from '../../components/inputs/TextInput';
-import newHostIcon from '../../assets/icons/account/new-host.png';
-import MainButton from '../../components/buttons/MainButton';
-import MinorFooter from '../../screenSnippets/account/MinorFooter';
-import AccountSideMenu from '../../screenSnippets/account/AccountSideMenu';
-import AccountNavbar from '../../screenSnippets/account/AccountNavbar';
+import { ThemeContext } from '../../../context/theme/ThemeProvider';
+import {themeStyles} from '../../../styles/theme/ThemeStyle';
+import AccountTopNavbar from '../../../screenSnippets/account/account/AccountTopNavbar';
+import TextInput from '../../../components/inputs/TextInput';
+import newHostIcon from '../../../assets/icons/account/new-host.png';
+import MainButton from '../../../components/buttons/MainButton';
+import MinorFooter from '../../../screenSnippets/account/account/MinorFooter';
+import AccountSideMenu from '../../../screenSnippets/account/account/AccountSideMenu';
+import AccountNavbar from '../../../screenSnippets/account/account/AccountNavbar';
 
 const CreateNewHost = () => {
 

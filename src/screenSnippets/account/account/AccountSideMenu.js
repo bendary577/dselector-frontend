@@ -1,13 +1,13 @@
 import React, {useContext} from 'react';
 import { useTranslation } from 'react-i18next';
-import { ThemeContext } from '../../context/theme/ThemeProvider';
-import {themeStyles} from '../../styles/theme/ThemeStyle';
-import '../../assets/css/account/account_side_menu.css';
-import dashboardIcon from '../../assets/icons/dashoard/dashboard.png';
-import dashboardDarkIcon from '../../assets/icons/dashoard/dashboard-dark.png';
-import servicesIcon from '../../assets/icons/dashoard/services.png';
-import supportIcon from '../../assets/icons/dashoard/support.png';
-import accountIcon from '../../assets/icons/dashoard/account.png';
+import { ThemeContext } from '../../../context/theme/ThemeProvider';
+import {themeStyles} from '../../../styles/theme/ThemeStyle';
+import dashboardIcon from '../../../assets/icons/dashoard/dashboard.png';
+import dashboardDarkIcon from '../../../assets/icons/dashoard/dashboard-dark.png';
+import servicesIcon from '../../../assets/icons/dashoard/services.png';
+import supportIcon from '../../../assets/icons/dashoard/support.png';
+import accountIcon from '../../../assets/icons/dashoard/account.png';
+import '../../../assets/css/account/account_side_menu.css';
 
 const AccountSideMenu = () => {
 
@@ -38,6 +38,9 @@ const AccountSideMenu = () => {
                                 <li>
                                     <a href="#">edit account</a>
                                 </li>
+                                <li>
+                                    <a href="#">logout</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -58,6 +61,9 @@ const AccountSideMenu = () => {
                             <ul class="collapse list-unstyled" id="pageSubmenu">
                                 <li>
                                     <a href="create_new_host">create new host</a>
+                                </li>
+                                <li>
+                                    <a href="firewall_settings">firewall settings</a>
                                 </li>
                             </ul>   
                         </li>

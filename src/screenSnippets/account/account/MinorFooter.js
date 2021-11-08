@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import { themeStyles } from '../../styles/theme/ThemeStyle';
-import { ThemeContext } from '../../context/theme/ThemeProvider';
+import { themeStyles } from '../../../styles/theme/ThemeStyle';
+import { ThemeContext } from '../../../context/theme/ThemeProvider';
 import { useTranslation } from 'react-i18next';
 
 const MinorFooter = (props) => {

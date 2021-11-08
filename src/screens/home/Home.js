@@ -7,7 +7,7 @@ import PresentationSection from '../../screenSnippets/home/PresentationSection';
 import ScrollingRowSection from '../../screenSnippets/home/ScrollingRowSection';
 import Services from '../../screenSnippets/home/Services';
 import Footer from '../../screenSnippets/home/Footer';
-import MinorFooter from '../../screenSnippets/account/MinorFooter';
+import MinorFooter from '../../screenSnippets/account/account/MinorFooter';
 
 const Home = () => {
 

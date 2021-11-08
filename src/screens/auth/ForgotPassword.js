@@ -5,7 +5,7 @@ import { ThemeContext } from '../../context/theme/ThemeProvider';
 import TextInput from '../../components/inputs/TextInput';
 import MainButton from '../../components/buttons/MainButton';
 import AuthNavbar from '../../screenSnippets/auth/AuthNavbar';
-import MinorFooter from '../../screenSnippets/account/MinorFooter';
+import MinorFooter from '../../screenSnippets/account/account/MinorFooter';
 
 
 const ForgotPassword = () => {

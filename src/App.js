@@ -4,13 +4,16 @@ import Home from '../src/screens/home/Home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeContext } from './context/theme/ThemeProvider';
 import { themeStyles } from "./styles/theme/ThemeStyle";
-import AccountDashboard from "./screens/account/AccountDashboard";
+import AccountDashboard from "./screens/account/account/AccountDashboard";
 import SignUp from "./screens/auth/SignUp";
 import SignIn from "./screens/auth/SignIn";
 import ForgotPassword from "./screens/auth/ForgotPassword";
 import ConfirmResetPasswordCode from "./screens/auth/ConfirmResetPasswordCode";
 import ResetPassword from "./screens/auth/ResetPassword";
-import CreateNewHost from "./screens/account/CreateNewHost";
+import CreateNewHost from "./screens/account/dynamicDNS/CreateNewHost";
+import FirewallSources from "./screens/account/firewall/FirewallSources";
+import FirewallAlerts from "./screens/account/firewall/FirewallAlerts";
+import FirewallDashboard from "./screens/account/firewall/FirewallDashboard";
 
 const App = () => {
 
@@ -21,18 +24,13 @@ const App = () => {
       <div style={styles.app}>
       <BrowserRouter>
           <Switch>
+
+              {/* ------------------------------------------- home ---------------------------- */}
               <Route exact path={["/", "/home"]}>
                   <Home />
               </Route>
 
-              <Route exact path="/account">
-                  <AccountDashboard />
-              </Route>
-
-              <Route exact path="/create_new_host">
-                  <CreateNewHost />
-              </Route>
-
+               {/* ------------------------------------------- auth ---------------------------- */}
               <Route exact path="/signup">
                   <SignUp />
               </Route>
@@ -52,6 +50,33 @@ const App = () => {
               <Route exact path="/reset_password">
                   <ResetPassword />
               </Route>
+
+              {/* ------------------------------------------- account ---------------------------- */}
+              <Route exact path="/account">
+                  <AccountDashboard />
+              </Route>
+
+
+              {/* ------------------------------------------- dynamicDNS ---------------------------- */}
+
+              <Route exact path="/create_new_host">
+                  <CreateNewHost />
+              </Route>
+
+              {/* ------------------------------------------- firewall ---------------------------- */}
+
+              <Route exact path="/firewall_settings">
+                  <FirewallSources />
+              </Route>
+
+              <Route exact path="/firewall_alerts">
+                  <FirewallAlerts />
+              </Route>
+
+              <Route exact path="/firewall_dashboard">
+                  <FirewallDashboard />
+              </Route>
+
 
           </Switch>
       </BrowserRouter>
