@@ -31,6 +31,11 @@ const FirewallDashboard = () => {
                         </div>
                     </div>
 
+                    <div className="chart_debian">
+                        <div className="dashboard">
+
+                        </div>
+                    </div>
                 </div>
             </div>  
             <MinorFooter />
