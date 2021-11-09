@@ -4,7 +4,7 @@ import { ThemeContext } from '../../../context/theme/ThemeProvider';
 import {themeStyles} from '../../../styles/theme/ThemeStyle';
 import dashboardIcon from '../../../assets/icons/account/dashboard.png';
 
-const AccountTopNavbar = () => {
+const FirewallTopNavbar = () => {
 
   const { t } = useTranslation();
   const { mode } = useContext(ThemeContext);
@@ -44,7 +44,7 @@ const AccountTopNavbar = () => {
                                     <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
                                     <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
                                   </svg>
-                                  <h6 className="mt-2">Account</h6>
+                                  <h6 className="mt-2">Bandwidth</h6>
                               </a>
                             </li>
                             <li class="nav-item mx-2">
@@ -73,5 +73,5 @@ const AccountTopNavbar = () => {
     );
 }
   
-export default AccountTopNavbar;
+export default FirewallTopNavbar;
   

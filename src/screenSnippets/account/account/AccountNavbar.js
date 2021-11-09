@@ -19,7 +19,7 @@ const AccountNavbar = () => {
       <div className="account_navbar_div navbar_div">
         <nav class="navbar navbar-expand-lg" style={styles.home.navbar}>
           <a class="navbar-brand mt-2 mt-lg-0 d-flex" href="">
-            <img src={mode === "dark" ? dSelectorLogoWhite : dSelectorLogo } style={{width:'220px', height:'120px'}} className="" alt="dselector" />
+            <img src={mode === "dark" ? dSelectorLogoWhite : dSelectorLogo } style={{width:'220px', height:'100px'}} className="" alt="dselector" />
           </a>   
           <div class="container-fluid">
             <button
@@ -44,7 +44,7 @@ const AccountNavbar = () => {
                 <li class="nav-item">
                   <a class="nav-link" style={styles.home.navbar} href="">{t(`home.navbar.support`)}</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mx-5">
                   <LanguageSwitcher />
                 </li>
                 <li class="nav-item">

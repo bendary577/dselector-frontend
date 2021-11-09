@@ -3,6 +3,7 @@
 .wrapper {
     display: flex;
     width: 100%;
+    height: 100%;
     align-items: stretch;
 }
 
@@ -21,10 +22,10 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
+    min-width: 200px;
     max-width: 250px;
     min-height: 100vh;
-    /*background: #70CBFF;*/
+    background: #70CBFF;
     color: #fff;
     transition: all 0.3s;
 }
@@ -40,7 +41,7 @@ a, a:hover, a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #ededed;
 }
 
 #sidebar ul p {

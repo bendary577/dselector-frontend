@@ -6,10 +6,13 @@ export const theme = {
         backgroundColor: "#ffffff",
         highlight: "#fdb813"
       },
-    //----------------------------------------- home ------------------- 
       home : {
         navbar : {
           backgroundColor : 'white',
+          color : 'black',
+        },
+        account_top_navbar : {
+          backgroundColor : '#e8ebed',
           color : 'black',
         },
         welcome : {
@@ -49,13 +52,11 @@ export const theme = {
           backgroundColor : '#5C84A1',
           color : 'white'
         }
-
       },
-      //----------------------------------------- dashboard -------------------
       dashboard : {
         sidebar : {
-          backgroundColor : "#70CBFF",
-          color : "white",
+          backgroundColor : "#e8ebed",
+          color : "black",
         },
         create_new_host : {
           backgroundColor : 'white',
@@ -72,8 +73,13 @@ export const theme = {
           color : 'white'
         },
         secondary_button : {
-          backgroundColor : '#27927E',
-          color : 'white'
+          backgroundColor : '#e8ebed',
+          color : 'black'
+        },
+        toggle_button : {
+          backgroundColor : '#e8ebed',
+          color : 'black',
+          borderRadius:'10px'
         }
       },
       inputs : {
@@ -89,6 +95,10 @@ export const theme = {
         auth_cards : {
           backgroundColor : 'white',
           color : 'black'
+        },
+        firewall_sources : {
+          backgroundColor : 'white',
+          color : 'black',
         }
        },
        tables : {
@@ -108,6 +118,10 @@ export const theme = {
         navbar : {
           backgroundColor : "#2b2c2e",
           color : "white"
+        },
+        account_top_navbar : {
+          backgroundColor : '#39403e',
+          color : 'white',
         },
         welcome : {
           backgroundColor : '#121212',
@@ -167,8 +181,13 @@ export const theme = {
           color : 'white'
         },
         secondary_button : {
-          backgroundColor : '#03DAC5',
-          color : 'white'
+          backgroundColor : '#27927E',
+          color : 'black'
+        },
+        toggle_button : {
+          backgroundColor : '#27927E',
+          color : 'black',
+          borderRadius:'10px'
         }
       },
       inputs : {
@@ -184,6 +203,10 @@ export const theme = {
         auth_cards : {
           backgroundColor : '#2b2c2e',
           color : 'white'
+        },
+        firewall_sources : {
+          backgroundColor : '39403e',
+          color : 'white',
         }
       },
       tables : {

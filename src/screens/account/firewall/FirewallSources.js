@@ -2,8 +2,9 @@ import React, {useContext} from 'react';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../../context/theme/ThemeProvider';
 import {themeStyles} from '../../../styles/theme/ThemeStyle';
-import AccountTopNavbar from '../../../screenSnippets/account/account/AccountTopNavbar';
+import FirewallTopNavbar from '../../../screenSnippets/account/firewall/FirewallTopNavbar';
 import sourceIcon from '../../../assets/icons/firewall/source.png';
+import addFirewallIcon from '../../../assets/icons/firewall/add_firewall.png';
 import MinorFooter from '../../../screenSnippets/account/account/MinorFooter';
 import FirewallSettingsSideMenu from '../../../screenSnippets/account/firewall/FirewallSettingsSideMenu';
 import AccountNavbar from '../../../screenSnippets/account/account/AccountNavbar';
@@ -22,7 +23,7 @@ const FirewallSources = () => {
             <div className="d-flex">
                 <FirewallSettingsSideMenu />
                 <div className="account_dashbaord_content_div w-100" style={styles.dashboard.create_new_host}>
-                    <AccountTopNavbar />
+                    <FirewallTopNavbar />
                     {/* ----------------------------------- hostnames cards ------------------------ */}
                     <div className="create_host_title mx-4 d-flex justify-content-between">
                         <div className="d-flex mx-4">
@@ -31,7 +32,7 @@ const FirewallSources = () => {
                         </div>
 
                         <div className="mx-4">
-                            <button type="button" class="btn btn-info me-2 mt-3" data-toggle="modal" data-target="#add_source_modal">
+                            <button type="button" class="btn me-2 mt-3" style={styles.buttons.secondary_button} data-toggle="modal" data-target="#add_source_modal">
                                 <strong>add source</strong>
                             </button>
                         </div>
@@ -41,13 +42,16 @@ const FirewallSources = () => {
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Add New Firewall Source</h5>
+                                <div className="d-flex">
+                                    <img src={addFirewallIcon} style={{width:'30px', height:'30px'}} alt="" />
+                                    <h5 className="modal-title mx-2" id="exampleModalLabel">Add New Firewall Source</h5>
+                                </div>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                            <p>Ensure FortiGate is sending syslog messages to the Fastvue Reporter for FortiGate Server. Then add the FortiGate as a source below.</p>
+                            <p>Ensure DSelector is sending syslog messages to the DSelector Reporter for FortiGate Server. Then add the FortiGate as a source below.</p>
                             <form>
                                 <div class="row">
                                     <div class="col">
@@ -60,7 +64,7 @@ const FirewallSources = () => {
                             </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">add source</button>
+                                <button type="button" class="btn" style={styles.buttons.secondary_button}>add source</button>
                             </div>
                             </div>
                         </div>

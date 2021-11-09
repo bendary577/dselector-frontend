@@ -14,6 +14,10 @@ export const themeStyles = (mode) => ({
         backgroundColor: theme[mode].home.navbar.backgroundColor,
         color : theme[mode].home.navbar.color
       },
+      account_top_navbar : {
+        backgroundColor: theme[mode].home.account_top_navbar.backgroundColor,
+        color : theme[mode].home.account_top_navbar.color
+      },
       welcome : {
         backgroundColor : theme[mode].home.welcome.backgroundColor,
         color : theme[mode].home.welcome.color,
@@ -95,8 +99,14 @@ export const themeStyles = (mode) => ({
       secondary_button : {
         backgroundColor : theme[mode].buttons.secondary_button.backgroundColor,
         color : theme[mode].buttons.secondary_button.color
+      },
+      toggle_button : {
+        backgroundColor : theme[mode].buttons.toggle_button.backgroundColor,
+        color : theme[mode].buttons.toggle_button.color,
+        borderRadius : theme[mode].buttons.toggle_button.borderRadius,
       }
     },
+
     //---------------------------------- input styling -----------------------
     inputs : {
       text_input : {
@@ -108,6 +118,11 @@ export const themeStyles = (mode) => ({
       registered_hosts : {
         backgroundColor : theme[mode].cards.registered_hosts.backgroundColor,
         color : theme[mode].cards.registered_hosts.color
+      },
+      firewall_sources : {
+        backgroundColor : theme[mode].cards.firewall_sources.backgroundColor,
+        color : theme[mode].cards.firewall_sources.color,
+        height : '220px'
       }
     },
     tables : {

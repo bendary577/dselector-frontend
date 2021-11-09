@@ -14,6 +14,7 @@ import CreateNewHost from "./screens/account/dynamicDNS/CreateNewHost";
 import FirewallSources from "./screens/account/firewall/FirewallSources";
 import FirewallAlerts from "./screens/account/firewall/FirewallAlerts";
 import FirewallDashboard from "./screens/account/firewall/FirewallDashboard";
+import FirewallReports from "./screens/account/firewall/FirewallReports";
 
 const App = () => {
 
@@ -75,6 +76,10 @@ const App = () => {
 
               <Route exact path="/firewall_dashboard">
                   <FirewallDashboard />
+              </Route>
+
+              <Route exact path="/firewall_reports">
+                  <FirewallReports />
               </Route>
 
 

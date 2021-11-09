@@ -12,7 +12,7 @@ const MinorFooter = (props) => {
     return (
         <div className="minor_footer_div" style={{height:'50px', backgroundColor:'black'}}>
             <div className="text-center d-flex justify-content-center align-items-center h-100">
-                <h5 className="text-white"><strong>© clearip.com • All Rights Reserved</strong></h5>
+               <h5 className="text-white"> <small><strong>© dselector.com • All Rights Reserved</strong></small></h5>
             </div>
         </div >
     );
