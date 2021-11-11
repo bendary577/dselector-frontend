@@ -51,15 +51,15 @@ const CreateNewHost = () => {
                                     </div>
                                     <div className="row mx-4 my-3">
                                         <div className="col-sm-12">
-                                            <h3><strong>{t(`dashboard.create_new_host.type`)}</strong></h3>
+                                            <h5><strong>{t(`dashboard.create_new_host.type`)}</strong></h5>
                                             <div className="my-3">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                                    <h4>{t(`dashboard.create_new_host.dns`)}</h4>
+                                                    <h6>{t(`dashboard.create_new_host.dns`)}</h6>
                                                 </div>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                                    <h4>{t(`dashboard.create_new_host.ipv6`)}</h4>
+                                                    <h6>{t(`dashboard.create_new_host.ipv6`)}</h6>
                                                 </div>
                                             </div>
                                         </div>

@@ -11,7 +11,7 @@ const SearchBar = (props) => {
 
     return (
         <div className="text_input_div my-2">
-            <input id="icon" type="text" className="text_input" placeholder={props.placeholder} style={{width:props.width, textIndent : '17px' , ...styles.inputs.text_input}}/>
+            <input id="icon" type="text" className="text_input border" placeholder={props.placeholder} style={{width:props.width, textIndent : '17px' , ...styles.inputs.text_input}}/>
         </div>
     );
 }

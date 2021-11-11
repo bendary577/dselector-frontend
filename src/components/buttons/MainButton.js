@@ -10,7 +10,7 @@ const MainButton = (props) => {
     
     return (
         <div className="button_div">
-            <button className="main_button" onClick={props.method} style={{width : props.width, height : props.height, ...styles.buttons.main_button}}>{props.title}</button>
+            <button className="main_button" onClick={props.method} style={{width : props.width, height : props.height, ...styles.buttons.secondary_button}}>{props.title}</button>
         </div >
     );
 }

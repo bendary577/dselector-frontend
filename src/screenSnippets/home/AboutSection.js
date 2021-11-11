@@ -21,7 +21,7 @@ const AboutSection = (props) => {
                     <div className="row about">
                         <div className="mt-5 text-center">
                             <div className="text-center d-flex justify-content-center align-items-center">
-                                <h2 style={{color : '#BB86FC'}}><strong>{t(`home.about.title`)}</strong></h2>
+                                <h2 style={{color : '#005ae0'}}><strong>{t(`home.about.title`)}</strong></h2>
                                 <img src={mode === 'dark' ? moonIcon : sunIcon} style={{width : '50px', height : '50px'}} className="me-2" alt="" />
                             </div>
                             <h4>{t(`home.about.description`)}</h4>

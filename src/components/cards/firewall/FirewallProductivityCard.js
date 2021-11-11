@@ -51,6 +51,7 @@ const FirewallProductivityCard = () => {
                                                     { x: "Dogs", y: 40 },
                                                     { x: "Birds", y: 55 }
                                                 ]}
+                                                colorScale={["tomato", "gold", "navy" ]}
                                             />
                                         </div>
                                         <div className="row h-75">

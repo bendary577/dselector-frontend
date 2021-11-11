@@ -11,9 +11,9 @@ const HostingServicesTable = () => {
     const styles = themeStyles(mode); 
 
     return (
-            <div className="subscription_plan_div" style={styles.tables}>
-                <table class="table table-hover">
-                    <thead style={styles.tables}>
+            <div className="subscription_plan_div">
+                <table class="table">
+                    <thead className="table-dark">
                         <tr>
                             <th scope="col">{t(`dashboard.content.hosting_services_table.hostname`)}</th>
                             <th scope="col">{t(`dashboard.content.hosting_services_table.ip`)}</th>
@@ -22,7 +22,7 @@ const HostingServicesTable = () => {
                             <th scope="col">{t(`dashboard.content.hosting_services_table.type`)}</th>
                         </tr>
                     </thead>
-                    <tbody style={styles.tables}>
+                    <tbody>
                         <tr>
                             <th >http://xyz.ddns.com</th>
                             <td>192.168.1.180</td>

@@ -24,8 +24,8 @@ const ThemeSwitcher = () => {
       checked={mode === "light" ? true : false}
       height={40}
       width={100}
-      offColor="#1d1f2f"
-      onColor="#FDB813"
+      offColor="#000000"
+      onColor="#005ae0"
       handleDiameter={20}	
       checkedIcon={
         <IoMdSunny style={styles.switch} color="white" className="light" />

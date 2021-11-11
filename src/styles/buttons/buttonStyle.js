@@ -1,6 +1,6 @@
 
 export const mainButtonStyle = {
-    backgroundColor  : '#8AC4FA',
+    backgroundColor  : 'red',
     color : 'white',
     width : '200px',
     height : '50px',

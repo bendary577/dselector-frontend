@@ -70,7 +70,7 @@ export const theme = {
       buttons : {
         main_button : {
           backgroundColor : '#8AC4FA',
-          color : 'white'
+          color : 'black'
         },
         secondary_button : {
           backgroundColor : '#e8ebed',

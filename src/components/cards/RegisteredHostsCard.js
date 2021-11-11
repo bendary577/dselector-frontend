@@ -2,10 +2,9 @@ import React, {useContext} from 'react';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
 import {themeStyles} from '../../styles/theme/ThemeStyle';
-import '../../assets/css/account/account_side_menu.css';
 import hostNameIcon from '../../assets/icons/account/hostname.png';
 import MainButton from '../buttons/MainButton';
-
+import '../../assets/css/account/account_side_menu.css';
 
 const RegisteredHostsCard = () => {
 
@@ -28,7 +27,7 @@ const RegisteredHostsCard = () => {
                                         <h4>{t(`dashboard.content.hostnames_available`)}</h4>
                                     </div>
                                     <div className="row">
-                                        <MainButton title={t(`dashboard.content.create_new`)}width="120px" height="50px" />
+                                        <MainButton title={t(`dashboard.content.create_new`)} height="35px" />
                                     </div>
                                 </div>
                           </div>

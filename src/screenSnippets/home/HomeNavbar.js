@@ -50,7 +50,7 @@ const HomeNavbar = () => {
                 <li class="nav-item">
                   <a class="nav-link" style={styles.home.navbar} href="">{t(`home.navbar.support`)}</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mx-5">
                   <LanguageSwitcher />
                 </li>
                 <li class="nav-item">

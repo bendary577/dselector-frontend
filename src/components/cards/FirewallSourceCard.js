@@ -20,8 +20,9 @@ const FirewallSources = () => {
                                 <table class="table">
                                     <thead class="thead-dark">
                                         <tr>
+                                        <th scope="col">Source</th>
                                         <th scope="col">Records</th>
-                                        <th scope="col">Records / Second</th>
+                                        <th scope="col">Records/S</th>
                                         <th scope="col">First Date</th>
                                         <th scope="col">Latest Date</th>
                                         <th scope="col">Action</th>
@@ -29,6 +30,9 @@ const FirewallSources = () => {
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <th>
+                                                <h5 className="text-primary"><strong>192.168.1.1:514</strong></h5>
+                                            </th>
                                             <th>
                                                 <h5><strong>4,612,040</strong></h5>
                                             </th>
@@ -49,6 +53,9 @@ const FirewallSources = () => {
                                             </td>
                                         </tr>
                                         <tr>
+                                            <th>
+                                                <h5 className="text-primary"><strong>192.168.1.1:514</strong></h5>
+                                            </th>
                                             <th>
                                                 <h5><strong>4,612,040</strong></h5>
                                             </th>

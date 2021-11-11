@@ -3,7 +3,7 @@ import { themeStyles } from '../../styles/theme/ThemeStyle';
 import { ThemeContext } from '../../context/theme/ThemeProvider';
 import { useTranslation } from 'react-i18next';
 import '../../assets/css/home/presentation.css';
-import deviceIcon from '../../assets/images/home/presentation/device.png';
+import deviceIcon from '../../assets/svg/home/about/about.svg';
 
 const PresentationSection = (props) => {
 
@@ -17,7 +17,7 @@ const PresentationSection = (props) => {
                     <div className="row presentation">
                         <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
                             <div>
-                                <h2 style={{color : '#BB86FC'}}><strong>Lorem Ibsum title</strong></h2>  
+                                <h2 style={{color : '#005ae0'}}><strong>Lorem Ibsum title</strong></h2>  
                                 <h3>{t(`home.presentation.presentation_text`)}</h3> 
                             </div>
                         </div>
