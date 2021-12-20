@@ -2,6 +2,6 @@
     height: 60%;
 }
 
-.navbar_div nav ul li a:hover {
-    color : '#BB86FC'
+.top_navbar_link :hover {
+    color: #005ae0;
 }
